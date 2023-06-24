@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "date": "06/01/2023",
+      "title": "ABHI TECH",
+      "description": "This is my first react project which i made in way of learning react js . I was so happy because this is the first time when i make any single-page-application . Have a look of it!",
+      "url": "https://abtechapp.vercel.app/",
+      "imgSrc": "https://static.vecteezy.com/system/resources/previews/005/611/315/original/young-man-wearing-vr-glasses-with-holographic-touch-finger-virtual-panel-in-digital-working-background-flat-style-cartoon-illustration-free-vector.jpg"
+    },
+
+    {
+      "date": "1/02/2023",
+      "title": "To-Do App",
+      "description": "This is a simple todo app which is made using redux toolkit and react-redux.it is capable of writing down your all do-list. Sometime it gets very useful.You should try it out. ",
+      "url": "https://todo2-omega.vercel.app/",
+      "imgSrc": "https://us.123rf.com/450wm/karolinamadej/karolinamadej1808/karolinamadej180801009/112082642-angry-cartoon-character-showing-to-do-list-icon-vector.jpg?ver=6"
+    },
+
+    {
+      "date": "09/03/2023",
+      "title": "Calculator",
+      "description": "This is a simple calculator to varify our calculation.It will help you to perfom citical calculations.You should try it out.",
+      "url": "https://reactcalculator-kohl.vercel.app/",
+      "imgSrc": "https://img.freepik.com/premium-vector/cute-cartoon-character-boy-calculator-brag_81698-1264.jpg?w=2000"
+    },
+
+    {
+      "date": "03/05/2023",
+      "title": "REACT CART",
+      "description": "This is a E-Commerce website made using redux toolkit for state management.In this web-app we can add product to cart and make them list in our wish list.",
+      "url": "https://reduxstore-three.vercel.app/",
+      "imgSrc": "https://miro.medium.com/v2/resize:fit:1018/1*iAu65xDmvpVdBJgps6EDEw.png"
+    },
+    {
+      "date": "05/06/2023",
+      "title": "PORTFOLIO",
+      "description": "This is my personal portfolio which is made using React.js. You will know every thing about me here . All information which is given here is 100% true . It contains a working contact form . Have a look of my portfolio.",
+      "url": "/",
+      "imgSrc": "https://www.springboard.com/blog/wp-content/uploads/2020/07/5-qualities-of-high-performing-software-engineers.png"
+    },
+    {
+      "date": "19/06/2023",
+      "title": "Travel&Safe",
+      "description": "This is a Travel website which is made using React.js . This web-app contains wonderful gallery and you can also add wonderful places to your wishlist . It also contains a working contact form through which you can contact us. Have a look of my amazing website named Travel&Safe .",
+      "url": "https://travelsafe.vercel.app/",
+      "imgSrc": "https://t4.ftcdn.net/jpg/04/53/98/11/360_F_453981152_ug3Bmm1QGOoejZzXFugcQT61j4XuoLew.jpg"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap");
+@import "Statics";
+@import "header";
+@import "home";
+@import "info";
+@import "work";
+@import "timeline";
+@import "services";
+@import "contact";
+@import "Footer";
+@import "MediaQueryForTablet";
+@import "MediaQueryForMedium";
+@import "MediaQueryForPhone";
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Roboto', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $text2;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: $color1;
+  // background-color: #fff3e2;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.disableBtn {
+  background-color: rgb(194, 192, 192) !important;
+  cursor: not-allowed !important;
+  color: rgb(3, 3, 3) !important;
+}
+
+@media screen and (max-width: 600px) {
+  #timeline {
+    .timelineBox {
+      max-width: 100%;
+      &::after {
+        left: 51px;
+      }
+      .timelineItem {
+        width: 84%;
+        position: relative;
+        left: 2rem;
+        &::after {
+          left: 2px;
+          right: 0;
+        }
+      }
+      .rightline {
+        left: 0;
+
+        &::after {
+          left: 33px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  #home {
+    > svg {
+      bottom: -30%;
+    }
+  }
+  #services {
+    width: 100%;
+    > section {
+      flex-direction: column;
+      padding: 3rem 1rem;
+      gap: 2rem;
+      > * {
+        width: 84%;
+      }
+    }
+  }
+  #contact {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+    > section {
+      > form {
+        > h2 {
+          font-size: 2.4rem;
+          letter-spacing: 3px;
+        }
+        > input {
+          width: 75%;
+        }
+        > button {
+          width: 75%;
+        }
+      }
+    }
+    > aside {
+      > img {
+        width: 84%;
+        height: 84%;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    > div {
+      width: 100%;
+      height: fit-content;
+      padding: 1rem;
+      border: none;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+    > aside {
+      padding: 2rem 0.5rem;
+      height: fit-content;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid white;
+      .socialHeading {
+        font-size: 1.4rem;
+      }
+      .socialLinks {
+        a {
+          padding: 0.6rem 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #timeline {
+    .timelineBox {
+      > div {
+        // padding: 1rem;
+        h2 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  footer {
+    flex-direction: column;
+    padding: 3rem 0.7rem;
+    > div {
+      width: 100%;
+      height: fit-content;
+      padding: 1rem;
+      border: none;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+    > aside {
+      padding: 2rem 0.5rem;
+      height: fit-content;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid white;
+      .socialHeading {
+        font-size: 1.4rem;
+      }
+      .socialLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        a {
+          padding: 0.6rem 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #home {
+    > svg {
+      bottom: -27%;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  #home {
+    > svg {
+      bottom: -30%;
+    }
+  }
+}
+
+//footer

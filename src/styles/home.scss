@@ -1,0 +1,122 @@
+#home {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  overflow-x: hidden;
+  > section {
+    width: 100%;
+
+    &:first-of-type {
+      padding-left: 5.4rem;
+      > div {
+        height: 100%;
+        padding-top: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2rem;
+        > h1 {
+          font: 900 4rem $text1;
+        }
+
+        .animatedText {
+          margin: 20px 0;
+          font-size: 1.5rem;
+          position: relative;
+          top: 20px;
+        }
+        .linkBtn {
+          display: flex;
+          justify-content: space-between;
+          margin: 3rem 0;
+          width: 410px;
+
+          .secondLink {
+            background-color: transparent;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color: rgb(255, 115, 0);
+            }
+          }
+
+          > a {
+            font-weight: 500;
+            padding: 8px 12px;
+            border: 1px solid black;
+            text-decoration: none;
+            color: $color6;
+            &:first-of-type {
+              color: $color1;
+              background-color: rgb(255, 115, 0);
+              transition: all 0.3s ease;
+              &:hover {
+                color: $color6;
+                background-color: transparent;
+              }
+            }
+
+            &:last-of-type {
+              background-color: transparent;
+              transition: all 0.3s ease;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 12px;
+              &:hover {
+                background-color: rgb(255, 115, 0);
+              }
+              > svg {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    &:last-of-type {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      // overflow-x: hidden;
+      overflow: hidden;
+
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 36vmax;
+        height: 36vmax;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: -1;
+        border-radius: 60%;
+      }
+
+      > img {
+        width: 33vmax;
+        // height: 33vmax;
+        height: 27vmax;
+        object-fit: contain;
+        position: relative;
+        bottom: 1rem;
+      }
+    }
+  }
+
+  > svg {
+    position: absolute;
+    font-size: 4rem;
+    left: 50%;
+    bottom: -5%;
+    transform: translateX(-50%);
+    animation: svganimate 0.7s linear infinite alternate;
+  }
+}
+
+@keyframes svganimate {
+  to {
+    transform: translate(-50%, -10px);
+  }
+}

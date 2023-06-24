@@ -1,0 +1,75 @@
+#timeline {
+  width: 100%;
+  height: max-content;
+  .timelineBox {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: $color5;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      margin-left: -3px;
+    }
+  }
+  .timelineItem {
+    padding: 1rem 3rem;
+    position: relative;
+    margin-top: 1rem;
+    background-color: $color1;
+    width: 50%;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: $color1;
+      top: 45px;
+      border: 5px solid;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    > div {
+      padding: 20px 30px;
+      background-color: $color5;
+      color: $color1;
+      border-radius: 6px;
+    }
+  }
+
+  .leftline {
+    left: 0%;
+    text-align: left;
+    &::after {
+      animation: circleMotion 0.3s linear infinite alternate;
+    }
+  }
+
+  .rightline {
+    text-align: right;
+    left: 50%;
+
+    &::after {
+      animation: circleMotion 0.5s linear infinite alternate;
+      left: -16px;
+    }
+  }
+}
+
+@keyframes circleMotion {
+  to {
+    transform: translateY(-3px);
+  }
+}
